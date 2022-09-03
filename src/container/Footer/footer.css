@@ -1,0 +1,137 @@
+.footer {
+    background-color: #f9f9f9;
+    padding: 120px 0;
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    width: 87px;
+}
+
+.footer-desc {
+    width: 354.5px;
+    height: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #5B5B5B;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header-search_row.footer-form_row {
+    width: 388px;
+    height: 62px;
+    margin-top: 0;
+    padding: 10px 0px 10px 8px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.footer-socials svg {
+    color: #5243C2;;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 64px;
+}
+
+.footer-nav_links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link_name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #161414;
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #5B5B5B;
+}
+
+.footer-link:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link_name.form-desc {
+    width: 388px;
+    height: 54px;
+}
+
+@media (max-width: 991px) {
+    .footer {
+        padding: 90px 0;
+    }
+
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-logo {
+        width: max-content;
+    }
+
+    .footer-desc {
+        width: 300px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 32px;
+        width: max-content;
+    }
+
+    .footer-form {
+        width: max-content;
+    }
+
+    .header-search_row.footer-form_row {
+        width: 320px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        place-items: center;
+    }
+
+    .form-btn._2 {
+        align-items: flex-start;
+        align-content: flex-start;
+        width: 290px;
+    }
+}
